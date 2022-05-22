@@ -8,6 +8,8 @@ learn AWS ParallelCluster.  formerly CfnCluster (“cloud formation cluster”)
 
 *  distributed as a Python package and is installed using the Python pip package manager.
 * supports [Slurm](https://docs.aws.amazon.com/parallelcluster/latest/ug/slurm-workload-manager-v3.html) and [AWS Batch](https://docs.aws.amazon.com/parallelcluster/latest/ug/awsbatchcli-v3.html) schedulers
+* generates CloudFormation to create the cluster resources
+* head node - 
 
 ## Demo
 
@@ -56,6 +58,8 @@ cat slurm-2.out
 
 - [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/what-is-aws-parallelcluster.html)
 - [aws/aws-parallelcluster](https://github.com/aws/aws-parallelcluster)
+- [cfncluster.readthedocs.io](https://cfncluster.readthedocs.io/en/latest/)
+- [AWS services used by AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/aws-services-v3.html)
 - [AWS Services used in CfnCluster](https://cfncluster.readthedocs.io/en/latest/aws_services.html#aws-services)
 - [Running your first job on AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials-running-your-first-job-on-version-3.html)
 - [Cluster configuration file](https://docs.aws.amazon.com/parallelcluster/latest/ug/cluster-configuration-file-v3.html)
