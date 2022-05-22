@@ -1,0 +1,21 @@
+Region: us-east-1
+Image:
+  Os: alinux2
+HeadNode:
+  InstanceType: t2.micro
+  Networking:
+    SubnetId: subnet-0da5d37b7a38af05c
+  Ssh:
+    KeyName: brianpfeil
+Scheduling:
+  Scheduler: slurm
+  SlurmQueues:
+  - Name: queue1
+    ComputeResources:
+    - Name: t2micro
+      InstanceType: t2.micro
+      MinCount: 0
+      MaxCount: 10
+    Networking:
+      SubnetIds:
+      - subnet-047af63c95de82ee5
