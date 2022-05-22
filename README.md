@@ -21,6 +21,8 @@ pcluster version
 
 # configure cluster. prompts for scheduler type, region, etc.
 # when done `cluster-config.yaml` is created
+# see <https://github.com/aws/aws-parallelcluster/tree/release-3.0/cli/tests/pcluster/example_configs> for example
+# cluster configuration files
 pcluster configure --config cluster-config.yaml
 
 # create / provision the cluster
@@ -55,3 +57,4 @@ cat slurm-2.out
 - [aws/aws-parallelcluster](https://github.com/aws/aws-parallelcluster)
 - [AWS Services used in CfnCluster](https://cfncluster.readthedocs.io/en/latest/aws_services.html#aws-services)
 - [Running your first job on AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/tutorials-running-your-first-job-on-version-3.html)
+- [aws-parallelcluster/cli/tests/pcluster/example_configs/](https://github.com/aws/aws-parallelcluster/tree/release-3.0/cli/tests/pcluster/example_configs) - example cluster configuration files
