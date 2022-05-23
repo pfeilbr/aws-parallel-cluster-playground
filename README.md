@@ -15,7 +15,8 @@ learn [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/u
 * AMI for head and compute nodes (ec2 instances)
     * AMI Name: aws-parallelcluster-3.1.4-amzn2-hvm-x86_64-202205121006 2022-05-12T10-09-45.467Z
     * AMI Locaiton: amazon/aws-parallelcluster-3.1.4-amzn2-hvm-x86_64-202205121006 2022-05-12T10-09-45.467Z
-
+* When you use the awsbatch scheduler, the AWS ParallelCluster CLI commands for AWS Batch are automatically installed in the AWS ParallelCluster head node
+    * [CLI commands for AWS Batch](https://docs.aws.amazon.com/parallelcluster/latest/ug/awsbatchcli-v3.html) - e.g. awsbsub, awsbqueues, etc.
 
 ## Demo
 
