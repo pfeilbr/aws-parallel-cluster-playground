@@ -23,17 +23,17 @@ python3 -m pip install "aws-parallelcluster" --upgrade --user
 pcluster version
 
 # configure cluster. prompts for scheduler type, region, etc.
-# when done `cluster-config.yaml` is created
+# when done `hello-world.yaml` is created
 # <https://github.com/aws/aws-parallelcluster/tree/release-3.0/cli/tests/pcluster/example_configs> for example
 # cluster configuration files
 # <https://docs.aws.amazon.com/parallelcluster/latest/ug/cluster-configuration-file-v3.html> - configuration files spec
-pcluster configure --config cluster-config.yaml
+pcluster configure --config hello-world.yaml
 
 # create / provision the cluster
-pcluster create-cluster --cluster-name test-cluster --cluster-configuration cluster-config.yaml
+pcluster create-cluster --cluster-name hello-world --cluster-configuration hello-world.yaml
 
 # login to cluster head node
-pcluster ssh --cluster-name test-cluster -i /path/to/keyfile.pem
+pcluster ssh --cluster-name hello-world -i /path/to/keyfile.pem
 
 # run the command sinfo to verify that your compute nodes are set up and configured.
 sinfo
@@ -52,7 +52,15 @@ sbatch hello-job.sh
 squeue
 
 # once no job in queue a `.out` file will be created with results (STDOUT)
-cat slurm-2.out
+cat slurm-1.out
+
+# clean up
+
+# delete cluster compute nodes (this doesn't delete cluster head node)
+pcluster delete-cluster-instances --cluster-name hello-world
+
+# delete the cluster itself
+pcluster delete-cluster --cluster-name hello-world
 ```
 
 ## Resources
