@@ -70,6 +70,12 @@ pcluster delete-cluster-instances --cluster-name hello-world
 pcluster delete-cluster --cluster-name hello-world
 ```
 
+## Screenshots
+
+### EC2 instances
+
+![](ec2-instances.png)
+
 ## Resources
 
 - [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/what-is-aws-parallelcluster.html)
