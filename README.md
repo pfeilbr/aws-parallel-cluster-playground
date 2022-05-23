@@ -11,6 +11,11 @@ learn [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/u
 * generates CloudFormation to create the cluster resources
     * CDK is used to generate templates
 * head node - responsible for submitting and scheduling jobs
+* compute node(s) - runs jobs
+* AMI for head and compute nodes (ec2 instances)
+    * AMI Name: aws-parallelcluster-3.1.4-amzn2-hvm-x86_64-202205121006 2022-05-12T10-09-45.467Z
+    * AMI Locaiton: amazon/aws-parallelcluster-3.1.4-amzn2-hvm-x86_64-202205121006 2022-05-12T10-09-45.467Z
+
 
 ## Demo
 
