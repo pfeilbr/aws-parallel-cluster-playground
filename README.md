@@ -60,6 +60,7 @@ cat slurm-1.out
 pcluster delete-cluster-instances --cluster-name hello-world
 
 # delete the cluster itself
+# this terminates the head node and delete the cfn stack used to create the cluster
 pcluster delete-cluster --cluster-name hello-world
 ```
 
