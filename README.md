@@ -46,6 +46,7 @@ echo "Hello World from $(hostname)"
 EOF
 
 # submit job
+# this will create and ec2 compute instance on the fly
 sbatch hello-job.sh
 
 # view job in job queue
