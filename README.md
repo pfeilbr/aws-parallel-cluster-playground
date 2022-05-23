@@ -29,12 +29,13 @@ pcluster version
 
 # configure cluster. prompts for scheduler type, region, etc.
 # when done `hello-world.yaml` is created
+# and it creates the networking / vpc resources via a cfn stack (e.g. `parallelclusternetworking-pubpriv-20220522231401` stack)
 # <https://github.com/aws/aws-parallelcluster/tree/release-3.0/cli/tests/pcluster/example_configs> for example
 # cluster configuration files
 # <https://docs.aws.amazon.com/parallelcluster/latest/ug/cluster-configuration-file-v3.html> - configuration files spec
 pcluster configure --config hello-world.yaml
 
-# create / provision the cluster
+# create / provision the cluster (the networking/vpc resources already exist from previous `configure` command)
 pcluster create-cluster --cluster-name hello-world --cluster-configuration hello-world.yaml
 
 # login to cluster head node
